@@ -1,4 +1,4 @@
-module VK_Proto
+module github.com/vnroyalclub/go_proto
 
 go 1.14
 
