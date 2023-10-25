@@ -266,7 +266,7 @@ func (x *ServiceOps) UnmarshalJSON(data []byte) error {
 	*x = ServiceOps(value)
 	return nil
 }
-func (ServiceOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor21, []int{0} }
+func (ServiceOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor23, []int{0} }
 
 type KeyValue struct {
 	Key              *string `protobuf:"bytes,1,req,name=Key" json:"Key,omitempty"`
@@ -277,7 +277,7 @@ type KeyValue struct {
 func (m *KeyValue) Reset()                    { *m = KeyValue{} }
 func (m *KeyValue) String() string            { return proto.CompactTextString(m) }
 func (*KeyValue) ProtoMessage()               {}
-func (*KeyValue) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{0} }
+func (*KeyValue) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{0} }
 
 func (m *KeyValue) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -301,7 +301,7 @@ type UpdateKeyValues struct {
 func (m *UpdateKeyValues) Reset()                    { *m = UpdateKeyValues{} }
 func (m *UpdateKeyValues) String() string            { return proto.CompactTextString(m) }
 func (*UpdateKeyValues) ProtoMessage()               {}
-func (*UpdateKeyValues) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{1} }
+func (*UpdateKeyValues) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{1} }
 
 func (m *UpdateKeyValues) GetItems() []*KeyValue {
 	if m != nil {
@@ -318,7 +318,7 @@ type LoadValues struct {
 func (m *LoadValues) Reset()                    { *m = LoadValues{} }
 func (m *LoadValues) String() string            { return proto.CompactTextString(m) }
 func (*LoadValues) ProtoMessage()               {}
-func (*LoadValues) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{2} }
+func (*LoadValues) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{2} }
 
 func (m *LoadValues) GetKeys() []string {
 	if m != nil {
@@ -335,7 +335,7 @@ type LoadValuesResp struct {
 func (m *LoadValuesResp) Reset()                    { *m = LoadValuesResp{} }
 func (m *LoadValuesResp) String() string            { return proto.CompactTextString(m) }
 func (*LoadValuesResp) ProtoMessage()               {}
-func (*LoadValuesResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{3} }
+func (*LoadValuesResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{3} }
 
 func (m *LoadValuesResp) GetItems() []*KeyValue {
 	if m != nil {
@@ -357,7 +357,7 @@ type RecordCapitalFlow struct {
 func (m *RecordCapitalFlow) Reset()                    { *m = RecordCapitalFlow{} }
 func (m *RecordCapitalFlow) String() string            { return proto.CompactTextString(m) }
 func (*RecordCapitalFlow) ProtoMessage()               {}
-func (*RecordCapitalFlow) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{4} }
+func (*RecordCapitalFlow) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{4} }
 
 func (m *RecordCapitalFlow) GetGameId() int32 {
 	if m != nil && m.GameId != nil {
@@ -402,7 +402,7 @@ type RecordCapitalFlowRsp struct {
 func (m *RecordCapitalFlowRsp) Reset()                    { *m = RecordCapitalFlowRsp{} }
 func (m *RecordCapitalFlowRsp) String() string            { return proto.CompactTextString(m) }
 func (*RecordCapitalFlowRsp) ProtoMessage()               {}
-func (*RecordCapitalFlowRsp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{5} }
+func (*RecordCapitalFlowRsp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{5} }
 
 func (m *RecordCapitalFlowRsp) GetTax() int64 {
 	if m != nil && m.Tax != nil {
@@ -422,7 +422,7 @@ type RegisterGame struct {
 func (m *RegisterGame) Reset()                    { *m = RegisterGame{} }
 func (m *RegisterGame) String() string            { return proto.CompactTextString(m) }
 func (*RegisterGame) ProtoMessage()               {}
-func (*RegisterGame) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{6} }
+func (*RegisterGame) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{6} }
 
 func (m *RegisterGame) GetGroupId() int32 {
 	if m != nil && m.GroupId != nil {
@@ -460,7 +460,7 @@ type GameUpdate struct {
 func (m *GameUpdate) Reset()                    { *m = GameUpdate{} }
 func (m *GameUpdate) String() string            { return proto.CompactTextString(m) }
 func (*GameUpdate) ProtoMessage()               {}
-func (*GameUpdate) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{7} }
+func (*GameUpdate) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{7} }
 
 func (m *GameUpdate) GetGroupId() int32 {
 	if m != nil && m.GroupId != nil {
@@ -517,7 +517,7 @@ type GameTableUpdate struct {
 func (m *GameTableUpdate) Reset()                    { *m = GameTableUpdate{} }
 func (m *GameTableUpdate) String() string            { return proto.CompactTextString(m) }
 func (*GameTableUpdate) ProtoMessage()               {}
-func (*GameTableUpdate) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{8} }
+func (*GameTableUpdate) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{8} }
 
 func (m *GameTableUpdate) GetGroupId() int32 {
 	if m != nil && m.GroupId != nil {
@@ -557,7 +557,7 @@ type SetJackpot struct {
 func (m *SetJackpot) Reset()                    { *m = SetJackpot{} }
 func (m *SetJackpot) String() string            { return proto.CompactTextString(m) }
 func (*SetJackpot) ProtoMessage()               {}
-func (*SetJackpot) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{9} }
+func (*SetJackpot) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{9} }
 
 func (m *SetJackpot) GetGroupId() int32 {
 	if m != nil && m.GroupId != nil {
@@ -583,7 +583,7 @@ type ModJackpot struct {
 func (m *ModJackpot) Reset()                    { *m = ModJackpot{} }
 func (m *ModJackpot) String() string            { return proto.CompactTextString(m) }
 func (*ModJackpot) ProtoMessage()               {}
-func (*ModJackpot) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{10} }
+func (*ModJackpot) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{10} }
 
 func (m *ModJackpot) GetGroupId() int32 {
 	if m != nil && m.GroupId != nil {
@@ -610,7 +610,7 @@ type GetServerAddress struct {
 func (m *GetServerAddress) Reset()                    { *m = GetServerAddress{} }
 func (m *GetServerAddress) String() string            { return proto.CompactTextString(m) }
 func (*GetServerAddress) ProtoMessage()               {}
-func (*GetServerAddress) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{11} }
+func (*GetServerAddress) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{11} }
 
 func (m *GetServerAddress) GetGameId() int32 {
 	if m != nil && m.GameId != nil {
@@ -643,7 +643,7 @@ type GetServerAddressResp struct {
 func (m *GetServerAddressResp) Reset()                    { *m = GetServerAddressResp{} }
 func (m *GetServerAddressResp) String() string            { return proto.CompactTextString(m) }
 func (*GetServerAddressResp) ProtoMessage()               {}
-func (*GetServerAddressResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{12} }
+func (*GetServerAddressResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{12} }
 
 func (m *GetServerAddressResp) GetAddress() string {
 	if m != nil && m.Address != nil {
@@ -676,7 +676,7 @@ type HSetUpdateValues struct {
 func (m *HSetUpdateValues) Reset()                    { *m = HSetUpdateValues{} }
 func (m *HSetUpdateValues) String() string            { return proto.CompactTextString(m) }
 func (*HSetUpdateValues) ProtoMessage()               {}
-func (*HSetUpdateValues) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{13} }
+func (*HSetUpdateValues) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{13} }
 
 func (m *HSetUpdateValues) GetItems() []*KeyValue {
 	if m != nil {
@@ -702,7 +702,7 @@ type HSetLoadValues struct {
 func (m *HSetLoadValues) Reset()                    { *m = HSetLoadValues{} }
 func (m *HSetLoadValues) String() string            { return proto.CompactTextString(m) }
 func (*HSetLoadValues) ProtoMessage()               {}
-func (*HSetLoadValues) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{14} }
+func (*HSetLoadValues) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{14} }
 
 func (m *HSetLoadValues) GetKeys() []string {
 	if m != nil {
@@ -727,7 +727,7 @@ type HSetLoadValuesResp struct {
 func (m *HSetLoadValuesResp) Reset()                    { *m = HSetLoadValuesResp{} }
 func (m *HSetLoadValuesResp) String() string            { return proto.CompactTextString(m) }
 func (*HSetLoadValuesResp) ProtoMessage()               {}
-func (*HSetLoadValuesResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{15} }
+func (*HSetLoadValuesResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{15} }
 
 func (m *HSetLoadValuesResp) GetItems() []*KeyValue {
 	if m != nil {
@@ -746,7 +746,7 @@ type HSetDelValues struct {
 func (m *HSetDelValues) Reset()                    { *m = HSetDelValues{} }
 func (m *HSetDelValues) String() string            { return proto.CompactTextString(m) }
 func (*HSetDelValues) ProtoMessage()               {}
-func (*HSetDelValues) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{16} }
+func (*HSetDelValues) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{16} }
 
 func (m *HSetDelValues) GetKeys() []string {
 	if m != nil {
@@ -772,7 +772,7 @@ type HSetUpdateValue struct {
 func (m *HSetUpdateValue) Reset()                    { *m = HSetUpdateValue{} }
 func (m *HSetUpdateValue) String() string            { return proto.CompactTextString(m) }
 func (*HSetUpdateValue) ProtoMessage()               {}
-func (*HSetUpdateValue) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{17} }
+func (*HSetUpdateValue) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{17} }
 
 func (m *HSetUpdateValue) GetItem() *KeyValue {
 	if m != nil {
@@ -798,7 +798,7 @@ type HSetLoadValue struct {
 func (m *HSetLoadValue) Reset()                    { *m = HSetLoadValue{} }
 func (m *HSetLoadValue) String() string            { return proto.CompactTextString(m) }
 func (*HSetLoadValue) ProtoMessage()               {}
-func (*HSetLoadValue) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{18} }
+func (*HSetLoadValue) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{18} }
 
 func (m *HSetLoadValue) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -823,7 +823,7 @@ type HSetLoadValueResp struct {
 func (m *HSetLoadValueResp) Reset()                    { *m = HSetLoadValueResp{} }
 func (m *HSetLoadValueResp) String() string            { return proto.CompactTextString(m) }
 func (*HSetLoadValueResp) ProtoMessage()               {}
-func (*HSetLoadValueResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{19} }
+func (*HSetLoadValueResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{19} }
 
 func (m *HSetLoadValueResp) GetItem() *KeyValue {
 	if m != nil {
@@ -842,7 +842,7 @@ type HSetDelValue struct {
 func (m *HSetDelValue) Reset()                    { *m = HSetDelValue{} }
 func (m *HSetDelValue) String() string            { return proto.CompactTextString(m) }
 func (*HSetDelValue) ProtoMessage()               {}
-func (*HSetDelValue) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{20} }
+func (*HSetDelValue) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{20} }
 
 func (m *HSetDelValue) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -869,7 +869,7 @@ type HListAdd struct {
 func (m *HListAdd) Reset()                    { *m = HListAdd{} }
 func (m *HListAdd) String() string            { return proto.CompactTextString(m) }
 func (*HListAdd) ProtoMessage()               {}
-func (*HListAdd) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{21} }
+func (*HListAdd) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{21} }
 
 func (m *HListAdd) GetItem() string {
 	if m != nil && m.Item != nil {
@@ -904,7 +904,7 @@ type HListLoadRange struct {
 func (m *HListLoadRange) Reset()                    { *m = HListLoadRange{} }
 func (m *HListLoadRange) String() string            { return proto.CompactTextString(m) }
 func (*HListLoadRange) ProtoMessage()               {}
-func (*HListLoadRange) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{22} }
+func (*HListLoadRange) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{22} }
 
 func (m *HListLoadRange) GetFrom() int32 {
 	if m != nil && m.From != nil {
@@ -943,7 +943,7 @@ type HListLoadRangeResp struct {
 func (m *HListLoadRangeResp) Reset()                    { *m = HListLoadRangeResp{} }
 func (m *HListLoadRangeResp) String() string            { return proto.CompactTextString(m) }
 func (*HListLoadRangeResp) ProtoMessage()               {}
-func (*HListLoadRangeResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{23} }
+func (*HListLoadRangeResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{23} }
 
 func (m *HListLoadRangeResp) GetItems() []string {
 	if m != nil {
@@ -962,7 +962,7 @@ type HListLoadAll struct {
 func (m *HListLoadAll) Reset()                    { *m = HListLoadAll{} }
 func (m *HListLoadAll) String() string            { return proto.CompactTextString(m) }
 func (*HListLoadAll) ProtoMessage()               {}
-func (*HListLoadAll) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{24} }
+func (*HListLoadAll) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{24} }
 
 func (m *HListLoadAll) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -987,7 +987,7 @@ type HListLoadAllResp struct {
 func (m *HListLoadAllResp) Reset()                    { *m = HListLoadAllResp{} }
 func (m *HListLoadAllResp) String() string            { return proto.CompactTextString(m) }
 func (*HListLoadAllResp) ProtoMessage()               {}
-func (*HListLoadAllResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{25} }
+func (*HListLoadAllResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{25} }
 
 func (m *HListLoadAllResp) GetItems() []string {
 	if m != nil {
@@ -1007,7 +1007,7 @@ type HListDel struct {
 func (m *HListDel) Reset()                    { *m = HListDel{} }
 func (m *HListDel) String() string            { return proto.CompactTextString(m) }
 func (*HListDel) ProtoMessage()               {}
-func (*HListDel) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{26} }
+func (*HListDel) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{26} }
 
 func (m *HListDel) GetItem() string {
 	if m != nil && m.Item != nil {
@@ -1040,7 +1040,7 @@ type ZSetRangeData struct {
 func (m *ZSetRangeData) Reset()                    { *m = ZSetRangeData{} }
 func (m *ZSetRangeData) String() string            { return proto.CompactTextString(m) }
 func (*ZSetRangeData) ProtoMessage()               {}
-func (*ZSetRangeData) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{27} }
+func (*ZSetRangeData) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{27} }
 
 func (m *ZSetRangeData) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1067,7 +1067,7 @@ type ZSetGetRange struct {
 func (m *ZSetGetRange) Reset()                    { *m = ZSetGetRange{} }
 func (m *ZSetGetRange) String() string            { return proto.CompactTextString(m) }
 func (*ZSetGetRange) ProtoMessage()               {}
-func (*ZSetGetRange) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{28} }
+func (*ZSetGetRange) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{28} }
 
 func (m *ZSetGetRange) GetFrom() int32 {
 	if m != nil && m.From != nil {
@@ -1099,7 +1099,7 @@ type ZSetGetRangeResp struct {
 func (m *ZSetGetRangeResp) Reset()                    { *m = ZSetGetRangeResp{} }
 func (m *ZSetGetRangeResp) String() string            { return proto.CompactTextString(m) }
 func (*ZSetGetRangeResp) ProtoMessage()               {}
-func (*ZSetGetRangeResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{29} }
+func (*ZSetGetRangeResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{29} }
 
 func (m *ZSetGetRangeResp) GetRank() []*ZSetRangeData {
 	if m != nil {
@@ -1119,7 +1119,7 @@ type ZSetRefreshRank struct {
 func (m *ZSetRefreshRank) Reset()                    { *m = ZSetRefreshRank{} }
 func (m *ZSetRefreshRank) String() string            { return proto.CompactTextString(m) }
 func (*ZSetRefreshRank) ProtoMessage()               {}
-func (*ZSetRefreshRank) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{30} }
+func (*ZSetRefreshRank) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{30} }
 
 func (m *ZSetRefreshRank) GetDelta() int64 {
 	if m != nil && m.Delta != nil {
@@ -1153,7 +1153,7 @@ type ZSetUpdateScore struct {
 func (m *ZSetUpdateScore) Reset()                    { *m = ZSetUpdateScore{} }
 func (m *ZSetUpdateScore) String() string            { return proto.CompactTextString(m) }
 func (*ZSetUpdateScore) ProtoMessage()               {}
-func (*ZSetUpdateScore) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{31} }
+func (*ZSetUpdateScore) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{31} }
 
 func (m *ZSetUpdateScore) GetScore() int64 {
 	if m != nil && m.Score != nil {
@@ -1186,7 +1186,7 @@ type ZSetGetScore struct {
 func (m *ZSetGetScore) Reset()                    { *m = ZSetGetScore{} }
 func (m *ZSetGetScore) String() string            { return proto.CompactTextString(m) }
 func (*ZSetGetScore) ProtoMessage()               {}
-func (*ZSetGetScore) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{32} }
+func (*ZSetGetScore) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{32} }
 
 func (m *ZSetGetScore) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1211,7 +1211,7 @@ type ZSetGetScoreResp struct {
 func (m *ZSetGetScoreResp) Reset()                    { *m = ZSetGetScoreResp{} }
 func (m *ZSetGetScoreResp) String() string            { return proto.CompactTextString(m) }
 func (*ZSetGetScoreResp) ProtoMessage()               {}
-func (*ZSetGetScoreResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{33} }
+func (*ZSetGetScoreResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{33} }
 
 func (m *ZSetGetScoreResp) GetScore() int64 {
 	if m != nil && m.Score != nil {
@@ -1230,7 +1230,7 @@ type SetAdd struct {
 func (m *SetAdd) Reset()                    { *m = SetAdd{} }
 func (m *SetAdd) String() string            { return proto.CompactTextString(m) }
 func (*SetAdd) ProtoMessage()               {}
-func (*SetAdd) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{34} }
+func (*SetAdd) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{34} }
 
 func (m *SetAdd) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1256,7 +1256,7 @@ type SetDel struct {
 func (m *SetDel) Reset()                    { *m = SetDel{} }
 func (m *SetDel) String() string            { return proto.CompactTextString(m) }
 func (*SetDel) ProtoMessage()               {}
-func (*SetDel) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{35} }
+func (*SetDel) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{35} }
 
 func (m *SetDel) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1282,7 +1282,7 @@ type SetIsMember struct {
 func (m *SetIsMember) Reset()                    { *m = SetIsMember{} }
 func (m *SetIsMember) String() string            { return proto.CompactTextString(m) }
 func (*SetIsMember) ProtoMessage()               {}
-func (*SetIsMember) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{36} }
+func (*SetIsMember) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{36} }
 
 func (m *SetIsMember) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1307,7 +1307,7 @@ type SetIsMemberResp struct {
 func (m *SetIsMemberResp) Reset()                    { *m = SetIsMemberResp{} }
 func (m *SetIsMemberResp) String() string            { return proto.CompactTextString(m) }
 func (*SetIsMemberResp) ProtoMessage()               {}
-func (*SetIsMemberResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{37} }
+func (*SetIsMemberResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{37} }
 
 func (m *SetIsMemberResp) GetIsMember() bool {
 	if m != nil && m.IsMember != nil {
@@ -1325,7 +1325,7 @@ type SetMembers struct {
 func (m *SetMembers) Reset()                    { *m = SetMembers{} }
 func (m *SetMembers) String() string            { return proto.CompactTextString(m) }
 func (*SetMembers) ProtoMessage()               {}
-func (*SetMembers) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{38} }
+func (*SetMembers) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{38} }
 
 func (m *SetMembers) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1343,7 +1343,7 @@ type SetMembersResp struct {
 func (m *SetMembersResp) Reset()                    { *m = SetMembersResp{} }
 func (m *SetMembersResp) String() string            { return proto.CompactTextString(m) }
 func (*SetMembersResp) ProtoMessage()               {}
-func (*SetMembersResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{39} }
+func (*SetMembersResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{39} }
 
 func (m *SetMembersResp) GetMembers() []string {
 	if m != nil {
@@ -1362,7 +1362,7 @@ type SetRandom struct {
 func (m *SetRandom) Reset()                    { *m = SetRandom{} }
 func (m *SetRandom) String() string            { return proto.CompactTextString(m) }
 func (*SetRandom) ProtoMessage()               {}
-func (*SetRandom) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{40} }
+func (*SetRandom) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{40} }
 
 func (m *SetRandom) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1387,7 +1387,7 @@ type SetRandomResp struct {
 func (m *SetRandomResp) Reset()                    { *m = SetRandomResp{} }
 func (m *SetRandomResp) String() string            { return proto.CompactTextString(m) }
 func (*SetRandomResp) ProtoMessage()               {}
-func (*SetRandomResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{41} }
+func (*SetRandomResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{41} }
 
 func (m *SetRandomResp) GetMembers() []string {
 	if m != nil {
@@ -1406,7 +1406,7 @@ type HListDelAll struct {
 func (m *HListDelAll) Reset()                    { *m = HListDelAll{} }
 func (m *HListDelAll) String() string            { return proto.CompactTextString(m) }
 func (*HListDelAll) ProtoMessage()               {}
-func (*HListDelAll) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{42} }
+func (*HListDelAll) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{42} }
 
 func (m *HListDelAll) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1431,7 +1431,7 @@ type ZSetDelAll struct {
 func (m *ZSetDelAll) Reset()                    { *m = ZSetDelAll{} }
 func (m *ZSetDelAll) String() string            { return proto.CompactTextString(m) }
 func (*ZSetDelAll) ProtoMessage()               {}
-func (*ZSetDelAll) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{43} }
+func (*ZSetDelAll) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{43} }
 
 func (m *ZSetDelAll) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1449,7 +1449,7 @@ type SetDelAll struct {
 func (m *SetDelAll) Reset()                    { *m = SetDelAll{} }
 func (m *SetDelAll) String() string            { return proto.CompactTextString(m) }
 func (*SetDelAll) ProtoMessage()               {}
-func (*SetDelAll) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{44} }
+func (*SetDelAll) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{44} }
 
 func (m *SetDelAll) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1468,7 +1468,7 @@ type ZSetDel struct {
 func (m *ZSetDel) Reset()                    { *m = ZSetDel{} }
 func (m *ZSetDel) String() string            { return proto.CompactTextString(m) }
 func (*ZSetDel) ProtoMessage()               {}
-func (*ZSetDel) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{45} }
+func (*ZSetDel) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{45} }
 
 func (m *ZSetDel) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1493,7 +1493,7 @@ type HSetDelHash struct {
 func (m *HSetDelHash) Reset()                    { *m = HSetDelHash{} }
 func (m *HSetDelHash) String() string            { return proto.CompactTextString(m) }
 func (*HSetDelHash) ProtoMessage()               {}
-func (*HSetDelHash) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{46} }
+func (*HSetDelHash) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{46} }
 
 func (m *HSetDelHash) GetHashName() string {
 	if m != nil && m.HashName != nil {
@@ -1512,7 +1512,7 @@ type ZSetGetRank struct {
 func (m *ZSetGetRank) Reset()                    { *m = ZSetGetRank{} }
 func (m *ZSetGetRank) String() string            { return proto.CompactTextString(m) }
 func (*ZSetGetRank) ProtoMessage()               {}
-func (*ZSetGetRank) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{47} }
+func (*ZSetGetRank) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{47} }
 
 func (m *ZSetGetRank) GetSetName() string {
 	if m != nil && m.SetName != nil {
@@ -1539,7 +1539,7 @@ type ZSetGetRankResp struct {
 func (m *ZSetGetRankResp) Reset()                    { *m = ZSetGetRankResp{} }
 func (m *ZSetGetRankResp) String() string            { return proto.CompactTextString(m) }
 func (*ZSetGetRankResp) ProtoMessage()               {}
-func (*ZSetGetRankResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{48} }
+func (*ZSetGetRankResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{48} }
 
 func (m *ZSetGetRankResp) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1572,7 +1572,7 @@ type HSetAddValue struct {
 func (m *HSetAddValue) Reset()                    { *m = HSetAddValue{} }
 func (m *HSetAddValue) String() string            { return proto.CompactTextString(m) }
 func (*HSetAddValue) ProtoMessage()               {}
-func (*HSetAddValue) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{49} }
+func (*HSetAddValue) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{49} }
 
 func (m *HSetAddValue) GetItem() *KeyValue {
 	if m != nil {
@@ -1598,7 +1598,7 @@ type SetExpire struct {
 func (m *SetExpire) Reset()                    { *m = SetExpire{} }
 func (m *SetExpire) String() string            { return proto.CompactTextString(m) }
 func (*SetExpire) ProtoMessage()               {}
-func (*SetExpire) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{50} }
+func (*SetExpire) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{50} }
 
 func (m *SetExpire) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1623,7 +1623,7 @@ type LoadExpire struct {
 func (m *LoadExpire) Reset()                    { *m = LoadExpire{} }
 func (m *LoadExpire) String() string            { return proto.CompactTextString(m) }
 func (*LoadExpire) ProtoMessage()               {}
-func (*LoadExpire) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{51} }
+func (*LoadExpire) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{51} }
 
 func (m *LoadExpire) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1642,7 +1642,7 @@ type LoadExpireResp struct {
 func (m *LoadExpireResp) Reset()                    { *m = LoadExpireResp{} }
 func (m *LoadExpireResp) String() string            { return proto.CompactTextString(m) }
 func (*LoadExpireResp) ProtoMessage()               {}
-func (*LoadExpireResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{52} }
+func (*LoadExpireResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{52} }
 
 func (m *LoadExpireResp) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1668,7 +1668,7 @@ type HListPop struct {
 func (m *HListPop) Reset()                    { *m = HListPop{} }
 func (m *HListPop) String() string            { return proto.CompactTextString(m) }
 func (*HListPop) ProtoMessage()               {}
-func (*HListPop) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{53} }
+func (*HListPop) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{53} }
 
 func (m *HListPop) GetKey() string {
 	if m != nil && m.Key != nil {
@@ -1693,7 +1693,7 @@ type HListPopResp struct {
 func (m *HListPopResp) Reset()                    { *m = HListPopResp{} }
 func (m *HListPopResp) String() string            { return proto.CompactTextString(m) }
 func (*HListPopResp) ProtoMessage()               {}
-func (*HListPopResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{54} }
+func (*HListPopResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{54} }
 
 func (m *HListPopResp) GetValue() string {
 	if m != nil && m.Value != nil {
@@ -1712,7 +1712,7 @@ type HSetIncr struct {
 func (m *HSetIncr) Reset()                    { *m = HSetIncr{} }
 func (m *HSetIncr) String() string            { return proto.CompactTextString(m) }
 func (*HSetIncr) ProtoMessage()               {}
-func (*HSetIncr) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{55} }
+func (*HSetIncr) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{55} }
 
 func (m *HSetIncr) GetItem() *KeyValue {
 	if m != nil {
@@ -1742,7 +1742,7 @@ type GameDataIncr struct {
 func (m *GameDataIncr) Reset()                    { *m = GameDataIncr{} }
 func (m *GameDataIncr) String() string            { return proto.CompactTextString(m) }
 func (*GameDataIncr) ProtoMessage()               {}
-func (*GameDataIncr) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{56} }
+func (*GameDataIncr) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{56} }
 
 func (m *GameDataIncr) GetGameId() int32 {
 	if m != nil && m.GameId != nil {
@@ -1799,7 +1799,7 @@ type GameDataLoad struct {
 func (m *GameDataLoad) Reset()                    { *m = GameDataLoad{} }
 func (m *GameDataLoad) String() string            { return proto.CompactTextString(m) }
 func (*GameDataLoad) ProtoMessage()               {}
-func (*GameDataLoad) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{57} }
+func (*GameDataLoad) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{57} }
 
 func (m *GameDataLoad) GetGameId() int32 {
 	if m != nil && m.GameId != nil {
@@ -1850,7 +1850,7 @@ type GameDataLoadResp struct {
 func (m *GameDataLoadResp) Reset()                    { *m = GameDataLoadResp{} }
 func (m *GameDataLoadResp) String() string            { return proto.CompactTextString(m) }
 func (*GameDataLoadResp) ProtoMessage()               {}
-func (*GameDataLoadResp) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{58} }
+func (*GameDataLoadResp) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{58} }
 
 func (m *GameDataLoadResp) GetGameId() int32 {
 	if m != nil && m.GameId != nil {
@@ -1906,7 +1906,7 @@ type GameUpdateOnlineCount struct {
 func (m *GameUpdateOnlineCount) Reset()                    { *m = GameUpdateOnlineCount{} }
 func (m *GameUpdateOnlineCount) String() string            { return proto.CompactTextString(m) }
 func (*GameUpdateOnlineCount) ProtoMessage()               {}
-func (*GameUpdateOnlineCount) Descriptor() ([]byte, []int) { return fileDescriptor21, []int{59} }
+func (*GameUpdateOnlineCount) Descriptor() ([]byte, []int) { return fileDescriptor23, []int{59} }
 
 func (m *GameUpdateOnlineCount) GetGroupId() int32 {
 	if m != nil && m.GroupId != nil {
@@ -2000,9 +2000,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.ServiceOps", ServiceOps_name, ServiceOps_value)
 }
 
-func init() { proto.RegisterFile("server_service.proto", fileDescriptor21) }
+func init() { proto.RegisterFile("server_service.proto", fileDescriptor23) }
 
-var fileDescriptor21 = []byte{
+var fileDescriptor23 = []byte{
 	// 1628 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xcc, 0x58, 0x5b, 0x53, 0x1b, 0xc7,
 	0x12, 0x3e, 0xab, 0x0b, 0x88, 0x16, 0x97, 0x61, 0x10, 0xb0, 0xc6, 0x37, 0xce, 0x1e, 0x9b, 0x23,

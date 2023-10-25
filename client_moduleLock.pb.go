@@ -22,7 +22,7 @@ type Lock struct {
 func (m *Lock) Reset()                    { *m = Lock{} }
 func (m *Lock) String() string            { return proto.CompactTextString(m) }
 func (*Lock) ProtoMessage()               {}
-func (*Lock) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+func (*Lock) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
 
 func (m *Lock) GetMType() int32 {
 	if m != nil && m.MType != nil {
@@ -48,7 +48,7 @@ type MLock struct {
 func (m *MLock) Reset()                    { *m = MLock{} }
 func (m *MLock) String() string            { return proto.CompactTextString(m) }
 func (*MLock) ProtoMessage()               {}
-func (*MLock) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{1} }
+func (*MLock) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{1} }
 
 func (m *MLock) GetIsLock() bool {
 	if m != nil && m.IsLock != nil {
@@ -74,7 +74,7 @@ type ModuleLock struct {
 func (m *ModuleLock) Reset()                    { *m = ModuleLock{} }
 func (m *ModuleLock) String() string            { return proto.CompactTextString(m) }
 func (*ModuleLock) ProtoMessage()               {}
-func (*ModuleLock) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{2} }
+func (*ModuleLock) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{2} }
 
 func (m *ModuleLock) GetFirstLock() *MLock {
 	if m != nil {
@@ -99,7 +99,7 @@ type ReqModuleLock struct {
 func (m *ReqModuleLock) Reset()                    { *m = ReqModuleLock{} }
 func (m *ReqModuleLock) String() string            { return proto.CompactTextString(m) }
 func (*ReqModuleLock) ProtoMessage()               {}
-func (*ReqModuleLock) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{3} }
+func (*ReqModuleLock) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{3} }
 
 func (m *ReqModuleLock) GetChannel() string {
 	if m != nil && m.Channel != nil {
@@ -115,9 +115,9 @@ func init() {
 	proto.RegisterType((*ReqModuleLock)(nil), "VK.Proto.ReqModuleLock")
 }
 
-func init() { proto.RegisterFile("client_moduleLock.proto", fileDescriptor5) }
+func init() { proto.RegisterFile("client_moduleLock.proto", fileDescriptor7) }
 
-var fileDescriptor5 = []byte{
+var fileDescriptor7 = []byte{
 	// 203 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x4f, 0xce, 0xc9, 0x4c,
 	0xcd, 0x2b, 0x89, 0xcf, 0xcd, 0x4f, 0x29, 0xcd, 0x49, 0xf5, 0xc9, 0x4f, 0xce, 0xd6, 0x2b, 0x28,

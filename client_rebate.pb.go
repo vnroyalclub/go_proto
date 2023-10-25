@@ -23,7 +23,7 @@ type Rebate struct {
 func (m *Rebate) Reset()                    { *m = Rebate{} }
 func (m *Rebate) String() string            { return proto.CompactTextString(m) }
 func (*Rebate) ProtoMessage()               {}
-func (*Rebate) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{0} }
+func (*Rebate) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{0} }
 
 func (m *Rebate) GetId() int32 {
 	if m != nil && m.Id != nil {
@@ -56,7 +56,7 @@ type FutureRebate struct {
 func (m *FutureRebate) Reset()                    { *m = FutureRebate{} }
 func (m *FutureRebate) String() string            { return proto.CompactTextString(m) }
 func (*FutureRebate) ProtoMessage()               {}
-func (*FutureRebate) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{1} }
+func (*FutureRebate) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{1} }
 
 func (m *FutureRebate) GetRebateInfo() []*Rebate {
 	if m != nil {
@@ -87,7 +87,7 @@ type RebateInfo struct {
 func (m *RebateInfo) Reset()                    { *m = RebateInfo{} }
 func (m *RebateInfo) String() string            { return proto.CompactTextString(m) }
 func (*RebateInfo) ProtoMessage()               {}
-func (*RebateInfo) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{2} }
+func (*RebateInfo) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{2} }
 
 func (m *RebateInfo) GetRebates() []*Rebate {
 	if m != nil {
@@ -151,7 +151,7 @@ type ReqRebateRsp struct {
 func (m *ReqRebateRsp) Reset()                    { *m = ReqRebateRsp{} }
 func (m *ReqRebateRsp) String() string            { return proto.CompactTextString(m) }
 func (*ReqRebateRsp) ProtoMessage()               {}
-func (*ReqRebateRsp) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{3} }
+func (*ReqRebateRsp) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{3} }
 
 func (m *ReqRebateRsp) GetReward() *PropExchangeData {
 	if m != nil {
@@ -195,9 +195,9 @@ func init() {
 	proto.RegisterType((*ReqRebateRsp)(nil), "VK.Proto.ReqRebateRsp")
 }
 
-func init() { proto.RegisterFile("client_rebate.proto", fileDescriptor11) }
+func init() { proto.RegisterFile("client_rebate.proto", fileDescriptor13) }
 
-var fileDescriptor11 = []byte{
+var fileDescriptor13 = []byte{
 	// 344 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x9c, 0x91, 0x4d, 0x4b, 0x3b, 0x31,
 	0x10, 0xc6, 0x69, 0xb6, 0xdb, 0x97, 0x69, 0xf9, 0xf3, 0x27, 0x95, 0xb2, 0x14, 0x0f, 0x65, 0x4f,

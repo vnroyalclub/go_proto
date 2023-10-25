@@ -59,7 +59,7 @@ func (x *SupplyOps) UnmarshalJSON(data []byte) error {
 	*x = SupplyOps(value)
 	return nil
 }
-func (SupplyOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor15, []int{0} }
+func (SupplyOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor17, []int{0} }
 
 // 查询是否有暗补 返回体
 type SpAskResp struct {
@@ -71,7 +71,7 @@ type SpAskResp struct {
 func (m *SpAskResp) Reset()                    { *m = SpAskResp{} }
 func (m *SpAskResp) String() string            { return proto.CompactTextString(m) }
 func (*SpAskResp) ProtoMessage()               {}
-func (*SpAskResp) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{0} }
+func (*SpAskResp) Descriptor() ([]byte, []int) { return fileDescriptor17, []int{0} }
 
 func (m *SpAskResp) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -96,7 +96,7 @@ type SpOpenReq struct {
 func (m *SpOpenReq) Reset()                    { *m = SpOpenReq{} }
 func (m *SpOpenReq) String() string            { return proto.CompactTextString(m) }
 func (*SpOpenReq) ProtoMessage()               {}
-func (*SpOpenReq) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{1} }
+func (*SpOpenReq) Descriptor() ([]byte, []int) { return fileDescriptor17, []int{1} }
 
 func (m *SpOpenReq) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -115,7 +115,7 @@ type SpOpenResp struct {
 func (m *SpOpenResp) Reset()                    { *m = SpOpenResp{} }
 func (m *SpOpenResp) String() string            { return proto.CompactTextString(m) }
 func (*SpOpenResp) ProtoMessage()               {}
-func (*SpOpenResp) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{2} }
+func (*SpOpenResp) Descriptor() ([]byte, []int) { return fileDescriptor17, []int{2} }
 
 func (m *SpOpenResp) GetPoints() []int32 {
 	if m != nil {
@@ -141,7 +141,7 @@ type SpConfirmReq struct {
 func (m *SpConfirmReq) Reset()                    { *m = SpConfirmReq{} }
 func (m *SpConfirmReq) String() string            { return proto.CompactTextString(m) }
 func (*SpConfirmReq) ProtoMessage()               {}
-func (*SpConfirmReq) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{3} }
+func (*SpConfirmReq) Descriptor() ([]byte, []int) { return fileDescriptor17, []int{3} }
 
 func (m *SpConfirmReq) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -173,7 +173,7 @@ type SpRankInfo struct {
 func (m *SpRankInfo) Reset()                    { *m = SpRankInfo{} }
 func (m *SpRankInfo) String() string            { return proto.CompactTextString(m) }
 func (*SpRankInfo) ProtoMessage()               {}
-func (*SpRankInfo) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{4} }
+func (*SpRankInfo) Descriptor() ([]byte, []int) { return fileDescriptor17, []int{4} }
 
 func (m *SpRankInfo) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -241,7 +241,7 @@ type SpRanksResp struct {
 func (m *SpRanksResp) Reset()                    { *m = SpRanksResp{} }
 func (m *SpRanksResp) String() string            { return proto.CompactTextString(m) }
 func (*SpRanksResp) ProtoMessage()               {}
-func (*SpRanksResp) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{5} }
+func (*SpRanksResp) Descriptor() ([]byte, []int) { return fileDescriptor17, []int{5} }
 
 func (m *SpRanksResp) GetRanks() []*SpRankInfo {
 	if m != nil {
@@ -267,9 +267,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.SupplyOps", SupplyOps_name, SupplyOps_value)
 }
 
-func init() { proto.RegisterFile("client_supply.proto", fileDescriptor15) }
+func init() { proto.RegisterFile("client_supply.proto", fileDescriptor17) }
 
-var fileDescriptor15 = []byte{
+var fileDescriptor17 = []byte{
 	// 376 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x84, 0x92, 0xcb, 0x6f, 0xa3, 0x30,
 	0x10, 0xc6, 0x05, 0x84, 0x84, 0x0c, 0xd9, 0x5d, 0xd6, 0x1b, 0xad, 0xac, 0x3d, 0x21, 0x2e, 0x8b,

@@ -56,7 +56,7 @@ func (x *FirstTaskType) UnmarshalJSON(data []byte) error {
 	*x = FirstTaskType(value)
 	return nil
 }
-func (FirstTaskType) EnumDescriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
+func (FirstTaskType) EnumDescriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
 
 // 刮刮卡信息
 type NoviceScratchCardInfo struct {
@@ -73,7 +73,7 @@ type NoviceScratchCardInfo struct {
 func (m *NoviceScratchCardInfo) Reset()                    { *m = NoviceScratchCardInfo{} }
 func (m *NoviceScratchCardInfo) String() string            { return proto.CompactTextString(m) }
 func (*NoviceScratchCardInfo) ProtoMessage()               {}
-func (*NoviceScratchCardInfo) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
+func (*NoviceScratchCardInfo) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
 
 func (m *NoviceScratchCardInfo) GetIsBindCard() bool {
 	if m != nil && m.IsBindCard != nil {
@@ -135,7 +135,7 @@ type NoviceFirstTaskItem struct {
 func (m *NoviceFirstTaskItem) Reset()                    { *m = NoviceFirstTaskItem{} }
 func (m *NoviceFirstTaskItem) String() string            { return proto.CompactTextString(m) }
 func (*NoviceFirstTaskItem) ProtoMessage()               {}
-func (*NoviceFirstTaskItem) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{1} }
+func (*NoviceFirstTaskItem) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{1} }
 
 func (m *NoviceFirstTaskItem) GetNeedCondition() int64 {
 	if m != nil && m.NeedCondition != nil {
@@ -178,7 +178,7 @@ type NoviceFirstTaskInfo struct {
 func (m *NoviceFirstTaskInfo) Reset()                    { *m = NoviceFirstTaskInfo{} }
 func (m *NoviceFirstTaskInfo) String() string            { return proto.CompactTextString(m) }
 func (*NoviceFirstTaskInfo) ProtoMessage()               {}
-func (*NoviceFirstTaskInfo) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{2} }
+func (*NoviceFirstTaskInfo) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{2} }
 
 func (m *NoviceFirstTaskInfo) GetRechargeItem() *NoviceFirstTaskItem {
 	if m != nil {
@@ -236,7 +236,7 @@ type NoviceSignInfo struct {
 func (m *NoviceSignInfo) Reset()                    { *m = NoviceSignInfo{} }
 func (m *NoviceSignInfo) String() string            { return proto.CompactTextString(m) }
 func (*NoviceSignInfo) ProtoMessage()               {}
-func (*NoviceSignInfo) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{3} }
+func (*NoviceSignInfo) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{3} }
 
 func (m *NoviceSignInfo) GetOrdinaryLose() int64 {
 	if m != nil && m.OrdinaryLose != nil {
@@ -338,7 +338,7 @@ type NoviceSignReq struct {
 func (m *NoviceSignReq) Reset()                    { *m = NoviceSignReq{} }
 func (m *NoviceSignReq) String() string            { return proto.CompactTextString(m) }
 func (*NoviceSignReq) ProtoMessage()               {}
-func (*NoviceSignReq) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{4} }
+func (*NoviceSignReq) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{4} }
 
 func (m *NoviceSignReq) GetSignType() int32 {
 	if m != nil && m.SignType != nil {
@@ -356,7 +356,7 @@ type NoviceSignResp struct {
 func (m *NoviceSignResp) Reset()                    { *m = NoviceSignResp{} }
 func (m *NoviceSignResp) String() string            { return proto.CompactTextString(m) }
 func (*NoviceSignResp) ProtoMessage()               {}
-func (*NoviceSignResp) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{5} }
+func (*NoviceSignResp) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{5} }
 
 func (m *NoviceSignResp) GetReward() *PropExchangeData {
 	if m != nil {
@@ -378,7 +378,7 @@ type NoviceReStartInfo struct {
 func (m *NoviceReStartInfo) Reset()                    { *m = NoviceReStartInfo{} }
 func (m *NoviceReStartInfo) String() string            { return proto.CompactTextString(m) }
 func (*NoviceReStartInfo) ProtoMessage()               {}
-func (*NoviceReStartInfo) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{6} }
+func (*NoviceReStartInfo) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{6} }
 
 func (m *NoviceReStartInfo) GetMaxRandomReward() int64 {
 	if m != nil && m.MaxRandomReward != nil {
@@ -424,7 +424,7 @@ type NoviceReStartDrawResp struct {
 func (m *NoviceReStartDrawResp) Reset()                    { *m = NoviceReStartDrawResp{} }
 func (m *NoviceReStartDrawResp) String() string            { return proto.CompactTextString(m) }
 func (*NoviceReStartDrawResp) ProtoMessage()               {}
-func (*NoviceReStartDrawResp) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{7} }
+func (*NoviceReStartDrawResp) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{7} }
 
 func (m *NoviceReStartDrawResp) GetReward() *PropExchangeData {
 	if m != nil {
@@ -448,7 +448,7 @@ type NoviceActivityInfo struct {
 func (m *NoviceActivityInfo) Reset()                    { *m = NoviceActivityInfo{} }
 func (m *NoviceActivityInfo) String() string            { return proto.CompactTextString(m) }
 func (*NoviceActivityInfo) ProtoMessage()               {}
-func (*NoviceActivityInfo) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{8} }
+func (*NoviceActivityInfo) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{8} }
 
 func (m *NoviceActivityInfo) GetReStartInfo() *NoviceReStartInfo {
 	if m != nil {
@@ -508,7 +508,7 @@ type NoviceFirstTaskReq struct {
 func (m *NoviceFirstTaskReq) Reset()                    { *m = NoviceFirstTaskReq{} }
 func (m *NoviceFirstTaskReq) String() string            { return proto.CompactTextString(m) }
 func (*NoviceFirstTaskReq) ProtoMessage()               {}
-func (*NoviceFirstTaskReq) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{9} }
+func (*NoviceFirstTaskReq) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{9} }
 
 func (m *NoviceFirstTaskReq) GetMType() FirstTaskType {
 	if m != nil && m.MType != nil {
@@ -531,9 +531,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.FirstTaskType", FirstTaskType_name, FirstTaskType_value)
 }
 
-func init() { proto.RegisterFile("client_noviceactivity.proto", fileDescriptor7) }
+func init() { proto.RegisterFile("client_noviceactivity.proto", fileDescriptor9) }
 
-var fileDescriptor7 = []byte{
+var fileDescriptor9 = []byte{
 	// 808 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xb4, 0x55, 0xdd, 0x6e, 0xdb, 0x36,
 	0x14, 0x9e, 0x25, 0xdb, 0x71, 0x8e, 0x63, 0xc7, 0x61, 0x92, 0xc5, 0x49, 0x96, 0xcd, 0x30, 0x86,

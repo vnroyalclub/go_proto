@@ -21,7 +21,7 @@ type ExchageChmToMini struct {
 func (m *ExchageChmToMini) Reset()                    { *m = ExchageChmToMini{} }
 func (m *ExchageChmToMini) String() string            { return proto.CompactTextString(m) }
 func (*ExchageChmToMini) ProtoMessage()               {}
-func (*ExchageChmToMini) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
+func (*ExchageChmToMini) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
 
 func (m *ExchageChmToMini) GetAmount() int64 {
 	if m != nil && m.Amount != nil {
@@ -39,7 +39,7 @@ type ExchangeMiniToChm struct {
 func (m *ExchangeMiniToChm) Reset()                    { *m = ExchangeMiniToChm{} }
 func (m *ExchangeMiniToChm) String() string            { return proto.CompactTextString(m) }
 func (*ExchangeMiniToChm) ProtoMessage()               {}
-func (*ExchangeMiniToChm) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{1} }
+func (*ExchangeMiniToChm) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
 
 func (m *ExchangeMiniToChm) GetAmount() int64 {
 	if m != nil && m.Amount != nil {
@@ -59,7 +59,7 @@ type MiniNotify struct {
 func (m *MiniNotify) Reset()                    { *m = MiniNotify{} }
 func (m *MiniNotify) String() string            { return proto.CompactTextString(m) }
 func (*MiniNotify) ProtoMessage()               {}
-func (*MiniNotify) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{2} }
+func (*MiniNotify) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{2} }
 
 func (m *MiniNotify) GetGameID() int32 {
 	if m != nil && m.GameID != nil {
@@ -92,7 +92,7 @@ type LoadMiniStatusResp struct {
 func (m *LoadMiniStatusResp) Reset()                    { *m = LoadMiniStatusResp{} }
 func (m *LoadMiniStatusResp) String() string            { return proto.CompactTextString(m) }
 func (*LoadMiniStatusResp) ProtoMessage()               {}
-func (*LoadMiniStatusResp) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{3} }
+func (*LoadMiniStatusResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{3} }
 
 func (m *LoadMiniStatusResp) GetItems() []*MiniNotify {
 	if m != nil {
@@ -115,9 +115,9 @@ func init() {
 	proto.RegisterType((*LoadMiniStatusResp)(nil), "VK.Proto.LoadMiniStatusResp")
 }
 
-func init() { proto.RegisterFile("client_mini.proto", fileDescriptor4) }
+func init() { proto.RegisterFile("client_mini.proto", fileDescriptor6) }
 
-var fileDescriptor4 = []byte{
+var fileDescriptor6 = []byte{
 	// 223 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x74, 0xcf, 0x4f, 0x4b, 0x03, 0x31,
 	0x10, 0x05, 0x70, 0x76, 0x63, 0xc5, 0x8e, 0x17, 0x1b, 0x44, 0x72, 0xf0, 0x10, 0xf6, 0x14, 0x2a,

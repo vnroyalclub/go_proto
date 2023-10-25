@@ -44,7 +44,7 @@ func (x *SpayType) UnmarshalJSON(data []byte) error {
 	*x = SpayType(value)
 	return nil
 }
-func (SpayType) EnumDescriptor() ([]byte, []int) { return fileDescriptor13, []int{0} }
+func (SpayType) EnumDescriptor() ([]byte, []int) { return fileDescriptor15, []int{0} }
 
 type SpayOrderStatus int32
 
@@ -90,7 +90,7 @@ func (x *SpayOrderStatus) UnmarshalJSON(data []byte) error {
 	*x = SpayOrderStatus(value)
 	return nil
 }
-func (SpayOrderStatus) EnumDescriptor() ([]byte, []int) { return fileDescriptor13, []int{1} }
+func (SpayOrderStatus) EnumDescriptor() ([]byte, []int) { return fileDescriptor15, []int{1} }
 
 // 状态 0-未处理，1-正在处理，2-已处理，3-已拒绝
 type SpayRecordStatus int32
@@ -131,7 +131,7 @@ func (x *SpayRecordStatus) UnmarshalJSON(data []byte) error {
 	*x = SpayRecordStatus(value)
 	return nil
 }
-func (SpayRecordStatus) EnumDescriptor() ([]byte, []int) { return fileDescriptor13, []int{2} }
+func (SpayRecordStatus) EnumDescriptor() ([]byte, []int) { return fileDescriptor15, []int{2} }
 
 type SpayBankAccount struct {
 	Id                *int32  `protobuf:"varint,1,req,name=Id" json:"Id,omitempty"`
@@ -144,7 +144,7 @@ type SpayBankAccount struct {
 func (m *SpayBankAccount) Reset()                    { *m = SpayBankAccount{} }
 func (m *SpayBankAccount) String() string            { return proto.CompactTextString(m) }
 func (*SpayBankAccount) ProtoMessage()               {}
-func (*SpayBankAccount) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{0} }
+func (*SpayBankAccount) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{0} }
 
 func (m *SpayBankAccount) GetId() int32 {
 	if m != nil && m.Id != nil {
@@ -189,7 +189,7 @@ type SpayOrder struct {
 func (m *SpayOrder) Reset()                    { *m = SpayOrder{} }
 func (m *SpayOrder) String() string            { return proto.CompactTextString(m) }
 func (*SpayOrder) ProtoMessage()               {}
-func (*SpayOrder) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{1} }
+func (*SpayOrder) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{1} }
 
 func (m *SpayOrder) GetStatus() string {
 	if m != nil && m.Status != nil {
@@ -256,7 +256,7 @@ type SpayBankAccountListReq struct {
 func (m *SpayBankAccountListReq) Reset()                    { *m = SpayBankAccountListReq{} }
 func (m *SpayBankAccountListReq) String() string            { return proto.CompactTextString(m) }
 func (*SpayBankAccountListReq) ProtoMessage()               {}
-func (*SpayBankAccountListReq) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{2} }
+func (*SpayBankAccountListReq) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{2} }
 
 func (m *SpayBankAccountListReq) GetType() SpayType {
 	if m != nil && m.Type != nil {
@@ -274,7 +274,7 @@ type SpayBankAccountListRsp struct {
 func (m *SpayBankAccountListRsp) Reset()                    { *m = SpayBankAccountListRsp{} }
 func (m *SpayBankAccountListRsp) String() string            { return proto.CompactTextString(m) }
 func (*SpayBankAccountListRsp) ProtoMessage()               {}
-func (*SpayBankAccountListRsp) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{3} }
+func (*SpayBankAccountListRsp) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{3} }
 
 func (m *SpayBankAccountListRsp) GetList() []*SpayBankAccount {
 	if m != nil {
@@ -301,7 +301,7 @@ type SpayOrderReq struct {
 func (m *SpayOrderReq) Reset()                    { *m = SpayOrderReq{} }
 func (m *SpayOrderReq) String() string            { return proto.CompactTextString(m) }
 func (*SpayOrderReq) ProtoMessage()               {}
-func (*SpayOrderReq) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{4} }
+func (*SpayOrderReq) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{4} }
 
 func (m *SpayOrderReq) GetType() SpayType {
 	if m != nil && m.Type != nil {
@@ -382,7 +382,7 @@ type SpayOrderCheckReq struct {
 func (m *SpayOrderCheckReq) Reset()                    { *m = SpayOrderCheckReq{} }
 func (m *SpayOrderCheckReq) String() string            { return proto.CompactTextString(m) }
 func (*SpayOrderCheckReq) ProtoMessage()               {}
-func (*SpayOrderCheckReq) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{5} }
+func (*SpayOrderCheckReq) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{5} }
 
 func (m *SpayOrderCheckReq) GetType() SpayType {
 	if m != nil && m.Type != nil {
@@ -404,7 +404,7 @@ type SpayOrderRsp struct {
 func (m *SpayOrderRsp) Reset()                    { *m = SpayOrderRsp{} }
 func (m *SpayOrderRsp) String() string            { return proto.CompactTextString(m) }
 func (*SpayOrderRsp) ProtoMessage()               {}
-func (*SpayOrderRsp) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{6} }
+func (*SpayOrderRsp) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{6} }
 
 func (m *SpayOrderRsp) GetType() SpayType {
 	if m != nil && m.Type != nil {
@@ -457,7 +457,7 @@ type BankExchangeReq struct {
 func (m *BankExchangeReq) Reset()                    { *m = BankExchangeReq{} }
 func (m *BankExchangeReq) String() string            { return proto.CompactTextString(m) }
 func (*BankExchangeReq) ProtoMessage()               {}
-func (*BankExchangeReq) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{7} }
+func (*BankExchangeReq) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{7} }
 
 func (m *BankExchangeReq) GetBankName() string {
 	if m != nil && m.BankName != nil {
@@ -528,7 +528,7 @@ type SpayBankRecord struct {
 func (m *SpayBankRecord) Reset()                    { *m = SpayBankRecord{} }
 func (m *SpayBankRecord) String() string            { return proto.CompactTextString(m) }
 func (*SpayBankRecord) ProtoMessage()               {}
-func (*SpayBankRecord) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{8} }
+func (*SpayBankRecord) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{8} }
 
 func (m *SpayBankRecord) GetBankName() string {
 	if m != nil && m.BankName != nil {
@@ -574,7 +574,7 @@ type SpayBankRecordRsp struct {
 func (m *SpayBankRecordRsp) Reset()                    { *m = SpayBankRecordRsp{} }
 func (m *SpayBankRecordRsp) String() string            { return proto.CompactTextString(m) }
 func (*SpayBankRecordRsp) ProtoMessage()               {}
-func (*SpayBankRecordRsp) Descriptor() ([]byte, []int) { return fileDescriptor13, []int{9} }
+func (*SpayBankRecordRsp) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{9} }
 
 func (m *SpayBankRecordRsp) GetRecords() []*SpayBankRecord {
 	if m != nil {
@@ -599,9 +599,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.SpayRecordStatus", SpayRecordStatus_name, SpayRecordStatus_value)
 }
 
-func init() { proto.RegisterFile("client_spay.proto", fileDescriptor13) }
+func init() { proto.RegisterFile("client_spay.proto", fileDescriptor15) }
 
-var fileDescriptor13 = []byte{
+var fileDescriptor15 = []byte{
 	// 712 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x55, 0xcf, 0x6e, 0xd3, 0x4c,
 	0x10, 0xff, 0x76, 0x6d, 0xa7, 0xc9, 0xf4, 0x53, 0xea, 0x6e, 0xfb, 0xf5, 0xdb, 0x56, 0x08, 0x59,

@@ -45,7 +45,7 @@ func (x *SubsidyOps) UnmarshalJSON(data []byte) error {
 	*x = SubsidyOps(value)
 	return nil
 }
-func (SubsidyOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor14, []int{0} }
+func (SubsidyOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor16, []int{0} }
 
 // 玩家的奖票排行榜
 type AddTicketRankReq struct {
@@ -58,7 +58,7 @@ type AddTicketRankReq struct {
 func (m *AddTicketRankReq) Reset()                    { *m = AddTicketRankReq{} }
 func (m *AddTicketRankReq) String() string            { return proto.CompactTextString(m) }
 func (*AddTicketRankReq) ProtoMessage()               {}
-func (*AddTicketRankReq) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{0} }
+func (*AddTicketRankReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{0} }
 
 func (m *AddTicketRankReq) GetPlayerID() int64 {
 	if m != nil && m.PlayerID != nil {
@@ -91,7 +91,7 @@ type LotteryReq struct {
 func (m *LotteryReq) Reset()                    { *m = LotteryReq{} }
 func (m *LotteryReq) String() string            { return proto.CompactTextString(m) }
 func (*LotteryReq) ProtoMessage()               {}
-func (*LotteryReq) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{1} }
+func (*LotteryReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{1} }
 
 func (m *LotteryReq) GetPlayerID() int64 {
 	if m != nil && m.PlayerID != nil {
@@ -117,7 +117,7 @@ type LotteryResp struct {
 func (m *LotteryResp) Reset()                    { *m = LotteryResp{} }
 func (m *LotteryResp) String() string            { return proto.CompactTextString(m) }
 func (*LotteryResp) ProtoMessage()               {}
-func (*LotteryResp) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{2} }
+func (*LotteryResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{2} }
 
 func (m *LotteryResp) GetPlayerTicket() int64 {
 	if m != nil && m.PlayerTicket != nil {
@@ -140,9 +140,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.SubsidyOps", SubsidyOps_name, SubsidyOps_value)
 }
 
-func init() { proto.RegisterFile("client_subsidy.proto", fileDescriptor14) }
+func init() { proto.RegisterFile("client_subsidy.proto", fileDescriptor16) }
 
-var fileDescriptor14 = []byte{
+var fileDescriptor16 = []byte{
 	// 216 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x49, 0xce, 0xc9, 0x4c,
 	0xcd, 0x2b, 0x89, 0x2f, 0x2e, 0x4d, 0x2a, 0xce, 0x4c, 0xa9, 0xd4, 0x2b, 0x28, 0xca, 0x2f, 0xc9,

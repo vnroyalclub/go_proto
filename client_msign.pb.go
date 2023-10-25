@@ -83,7 +83,7 @@ func (x *MsignOps) UnmarshalJSON(data []byte) error {
 	*x = MsignOps(value)
 	return nil
 }
-func (MsignOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
+func (MsignOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
 
 // 是否签到标识
 type MsMark int32
@@ -121,7 +121,7 @@ func (x *MsMark) UnmarshalJSON(data []byte) error {
 	*x = MsMark(value)
 	return nil
 }
-func (MsMark) EnumDescriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
+func (MsMark) EnumDescriptor() ([]byte, []int) { return fileDescriptor8, []int{1} }
 
 // 是否签到标识
 type MsBoxType int32
@@ -162,7 +162,7 @@ func (x *MsBoxType) UnmarshalJSON(data []byte) error {
 	*x = MsBoxType(value)
 	return nil
 }
-func (MsBoxType) EnumDescriptor() ([]byte, []int) { return fileDescriptor6, []int{2} }
+func (MsBoxType) EnumDescriptor() ([]byte, []int) { return fileDescriptor8, []int{2} }
 
 // 查询签到返回
 type MsAskSignResp struct {
@@ -173,7 +173,7 @@ type MsAskSignResp struct {
 func (m *MsAskSignResp) Reset()                    { *m = MsAskSignResp{} }
 func (m *MsAskSignResp) String() string            { return proto.CompactTextString(m) }
 func (*MsAskSignResp) ProtoMessage()               {}
-func (*MsAskSignResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
+func (*MsAskSignResp) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{0} }
 
 func (m *MsAskSignResp) GetIsSign() bool {
 	if m != nil && m.IsSign != nil {
@@ -192,7 +192,7 @@ type MsSignResp struct {
 func (m *MsSignResp) Reset()                    { *m = MsSignResp{} }
 func (m *MsSignResp) String() string            { return proto.CompactTextString(m) }
 func (*MsSignResp) ProtoMessage()               {}
-func (*MsSignResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
+func (*MsSignResp) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{1} }
 
 func (m *MsSignResp) GetConfigId() int32 {
 	if m != nil && m.ConfigId != nil {
@@ -222,7 +222,7 @@ type MsAskReplenishResp struct {
 func (m *MsAskReplenishResp) Reset()                    { *m = MsAskReplenishResp{} }
 func (m *MsAskReplenishResp) String() string            { return proto.CompactTextString(m) }
 func (*MsAskReplenishResp) ProtoMessage()               {}
-func (*MsAskReplenishResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{2} }
+func (*MsAskReplenishResp) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{2} }
 
 func (m *MsAskReplenishResp) GetYear() int32 {
 	if m != nil && m.Year != nil {
@@ -276,7 +276,7 @@ type MsReplenishReq struct {
 func (m *MsReplenishReq) Reset()                    { *m = MsReplenishReq{} }
 func (m *MsReplenishReq) String() string            { return proto.CompactTextString(m) }
 func (*MsReplenishReq) ProtoMessage()               {}
-func (*MsReplenishReq) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{3} }
+func (*MsReplenishReq) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{3} }
 
 func (m *MsReplenishReq) GetMonth() int32 {
 	if m != nil && m.Month != nil {
@@ -301,7 +301,7 @@ type MsBoxContent struct {
 func (m *MsBoxContent) Reset()                    { *m = MsBoxContent{} }
 func (m *MsBoxContent) String() string            { return proto.CompactTextString(m) }
 func (*MsBoxContent) ProtoMessage()               {}
-func (*MsBoxContent) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{4} }
+func (*MsBoxContent) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{4} }
 
 func (m *MsBoxContent) GetEntityId() int32 {
 	if m != nil && m.EntityId != nil {
@@ -333,7 +333,7 @@ type MsBox struct {
 func (m *MsBox) Reset()                    { *m = MsBox{} }
 func (m *MsBox) String() string            { return proto.CompactTextString(m) }
 func (*MsBox) ProtoMessage()               {}
-func (*MsBox) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{5} }
+func (*MsBox) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{5} }
 
 func (m *MsBox) GetSignTimes() int32 {
 	if m != nil && m.SignTimes != nil {
@@ -406,7 +406,7 @@ type MsAskBoxResp struct {
 func (m *MsAskBoxResp) Reset()                    { *m = MsAskBoxResp{} }
 func (m *MsAskBoxResp) String() string            { return proto.CompactTextString(m) }
 func (*MsAskBoxResp) ProtoMessage()               {}
-func (*MsAskBoxResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{6} }
+func (*MsAskBoxResp) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{6} }
 
 func (m *MsAskBoxResp) GetValue() []*MsBox {
 	if m != nil {
@@ -427,7 +427,7 @@ type MsBarrage struct {
 func (m *MsBarrage) Reset()                    { *m = MsBarrage{} }
 func (m *MsBarrage) String() string            { return proto.CompactTextString(m) }
 func (*MsBarrage) ProtoMessage()               {}
-func (*MsBarrage) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{7} }
+func (*MsBarrage) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{7} }
 
 func (m *MsBarrage) GetPlayerNick() string {
 	if m != nil && m.PlayerNick != nil {
@@ -472,7 +472,7 @@ type MsRollResp struct {
 func (m *MsRollResp) Reset()                    { *m = MsRollResp{} }
 func (m *MsRollResp) String() string            { return proto.CompactTextString(m) }
 func (*MsRollResp) ProtoMessage()               {}
-func (*MsRollResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{8} }
+func (*MsRollResp) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{8} }
 
 func (m *MsRollResp) GetValue() []*MsBarrage {
 	if m != nil {
@@ -489,7 +489,7 @@ type MsRankResp struct {
 func (m *MsRankResp) Reset()                    { *m = MsRankResp{} }
 func (m *MsRankResp) String() string            { return proto.CompactTextString(m) }
 func (*MsRankResp) ProtoMessage()               {}
-func (*MsRankResp) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{9} }
+func (*MsRankResp) Descriptor() ([]byte, []int) { return fileDescriptor8, []int{9} }
 
 func (m *MsRankResp) GetValue() []*MsBarrage {
 	if m != nil {
@@ -514,9 +514,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.MsBoxType", MsBoxType_name, MsBoxType_value)
 }
 
-func init() { proto.RegisterFile("client_msign.proto", fileDescriptor6) }
+func init() { proto.RegisterFile("client_msign.proto", fileDescriptor8) }
 
-var fileDescriptor6 = []byte{
+var fileDescriptor8 = []byte{
 	// 686 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x94, 0x54, 0xd1, 0x6a, 0xdb, 0x4a,
 	0x10, 0x45, 0x92, 0x65, 0xcb, 0x63, 0x27, 0xd6, 0xdd, 0x84, 0x20, 0x2e, 0x97, 0x8b, 0x11, 0xdc,

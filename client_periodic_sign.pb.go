@@ -24,7 +24,7 @@ type SignInfo struct {
 func (m *SignInfo) Reset()                    { *m = SignInfo{} }
 func (m *SignInfo) String() string            { return proto.CompactTextString(m) }
 func (*SignInfo) ProtoMessage()               {}
-func (*SignInfo) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{0} }
+func (*SignInfo) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{0} }
 
 func (m *SignInfo) GetSign() int32 {
 	if m != nil && m.Sign != nil {
@@ -64,7 +64,7 @@ type SignV1Rsp struct {
 func (m *SignV1Rsp) Reset()                    { *m = SignV1Rsp{} }
 func (m *SignV1Rsp) String() string            { return proto.CompactTextString(m) }
 func (*SignV1Rsp) ProtoMessage()               {}
-func (*SignV1Rsp) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{1} }
+func (*SignV1Rsp) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{1} }
 
 func (m *SignV1Rsp) GetInfo() *SignInfo {
 	if m != nil {
@@ -85,9 +85,9 @@ func init() {
 	proto.RegisterType((*SignV1Rsp)(nil), "VK.Proto.SignV1Rsp")
 }
 
-func init() { proto.RegisterFile("client_periodic_sign.proto", fileDescriptor10) }
+func init() { proto.RegisterFile("client_periodic_sign.proto", fileDescriptor12) }
 
-var fileDescriptor10 = []byte{
+var fileDescriptor12 = []byte{
 	// 216 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x4c, 0x8e, 0x41, 0x4b, 0xc4, 0x30,
 	0x10, 0x85, 0xb1, 0xdb, 0x95, 0x3a, 0xbd, 0x8d, 0x20, 0xa1, 0xa7, 0xb2, 0x07, 0xe9, 0xa9, 0xe8,

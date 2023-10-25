@@ -67,7 +67,7 @@ func (x *TreasureOps) UnmarshalJSON(data []byte) error {
 	*x = TreasureOps(value)
 	return nil
 }
-func (TreasureOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor16, []int{0} }
+func (TreasureOps) EnumDescriptor() ([]byte, []int) { return fileDescriptor18, []int{0} }
 
 // 奖品限制类型
 type TsLimitType int32
@@ -102,7 +102,7 @@ func (x *TsLimitType) UnmarshalJSON(data []byte) error {
 	*x = TsLimitType(value)
 	return nil
 }
-func (TsLimitType) EnumDescriptor() ([]byte, []int) { return fileDescriptor16, []int{1} }
+func (TsLimitType) EnumDescriptor() ([]byte, []int) { return fileDescriptor18, []int{1} }
 
 // 奖品限制类型
 type TsOpenType int32
@@ -137,7 +137,7 @@ func (x *TsOpenType) UnmarshalJSON(data []byte) error {
 	*x = TsOpenType(value)
 	return nil
 }
-func (TsOpenType) EnumDescriptor() ([]byte, []int) { return fileDescriptor16, []int{2} }
+func (TsOpenType) EnumDescriptor() ([]byte, []int) { return fileDescriptor18, []int{2} }
 
 // 奖品每期状态
 type TsIssueStatus int32
@@ -184,7 +184,7 @@ func (x *TsIssueStatus) UnmarshalJSON(data []byte) error {
 	*x = TsIssueStatus(value)
 	return nil
 }
-func (TsIssueStatus) EnumDescriptor() ([]byte, []int) { return fileDescriptor16, []int{3} }
+func (TsIssueStatus) EnumDescriptor() ([]byte, []int) { return fileDescriptor18, []int{3} }
 
 // 奖品信息
 type TsPrize struct {
@@ -213,7 +213,7 @@ type TsPrize struct {
 func (m *TsPrize) Reset()                    { *m = TsPrize{} }
 func (m *TsPrize) String() string            { return proto.CompactTextString(m) }
 func (*TsPrize) ProtoMessage()               {}
-func (*TsPrize) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{0} }
+func (*TsPrize) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{0} }
 
 func (m *TsPrize) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -357,7 +357,7 @@ type TsPrizeListResp struct {
 func (m *TsPrizeListResp) Reset()                    { *m = TsPrizeListResp{} }
 func (m *TsPrizeListResp) String() string            { return proto.CompactTextString(m) }
 func (*TsPrizeListResp) ProtoMessage()               {}
-func (*TsPrizeListResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{1} }
+func (*TsPrizeListResp) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{1} }
 
 func (m *TsPrizeListResp) GetPrizeList() []*TsPrize {
 	if m != nil {
@@ -377,7 +377,7 @@ type TsPrizePuarchaseReq struct {
 func (m *TsPrizePuarchaseReq) Reset()                    { *m = TsPrizePuarchaseReq{} }
 func (m *TsPrizePuarchaseReq) String() string            { return proto.CompactTextString(m) }
 func (*TsPrizePuarchaseReq) ProtoMessage()               {}
-func (*TsPrizePuarchaseReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{2} }
+func (*TsPrizePuarchaseReq) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{2} }
 
 func (m *TsPrizePuarchaseReq) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -411,7 +411,7 @@ type TsLuckyRecordReq struct {
 func (m *TsLuckyRecordReq) Reset()                    { *m = TsLuckyRecordReq{} }
 func (m *TsLuckyRecordReq) String() string            { return proto.CompactTextString(m) }
 func (*TsLuckyRecordReq) ProtoMessage()               {}
-func (*TsLuckyRecordReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{3} }
+func (*TsLuckyRecordReq) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{3} }
 
 func (m *TsLuckyRecordReq) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -448,7 +448,7 @@ type TsLuckyRecord struct {
 func (m *TsLuckyRecord) Reset()                    { *m = TsLuckyRecord{} }
 func (m *TsLuckyRecord) String() string            { return proto.CompactTextString(m) }
 func (*TsLuckyRecord) ProtoMessage()               {}
-func (*TsLuckyRecord) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{4} }
+func (*TsLuckyRecord) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{4} }
 
 func (m *TsLuckyRecord) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -501,7 +501,7 @@ type TsLuckyRecordResp struct {
 func (m *TsLuckyRecordResp) Reset()                    { *m = TsLuckyRecordResp{} }
 func (m *TsLuckyRecordResp) String() string            { return proto.CompactTextString(m) }
 func (*TsLuckyRecordResp) ProtoMessage()               {}
-func (*TsLuckyRecordResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{5} }
+func (*TsLuckyRecordResp) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{5} }
 
 func (m *TsLuckyRecordResp) GetLuckyRecordList() []*TsLuckyRecord {
 	if m != nil {
@@ -520,7 +520,7 @@ type TsPurchaseRecordReq struct {
 func (m *TsPurchaseRecordReq) Reset()                    { *m = TsPurchaseRecordReq{} }
 func (m *TsPurchaseRecordReq) String() string            { return proto.CompactTextString(m) }
 func (*TsPurchaseRecordReq) ProtoMessage()               {}
-func (*TsPurchaseRecordReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{6} }
+func (*TsPurchaseRecordReq) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{6} }
 
 func (m *TsPurchaseRecordReq) GetStart() int32 {
 	if m != nil && m.Start != nil {
@@ -557,7 +557,7 @@ type TsPurchaseRecord struct {
 func (m *TsPurchaseRecord) Reset()                    { *m = TsPurchaseRecord{} }
 func (m *TsPurchaseRecord) String() string            { return proto.CompactTextString(m) }
 func (*TsPurchaseRecord) ProtoMessage()               {}
-func (*TsPurchaseRecord) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{7} }
+func (*TsPurchaseRecord) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{7} }
 
 func (m *TsPurchaseRecord) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -659,7 +659,7 @@ type TsPurchaseRecordResp struct {
 func (m *TsPurchaseRecordResp) Reset()                    { *m = TsPurchaseRecordResp{} }
 func (m *TsPurchaseRecordResp) String() string            { return proto.CompactTextString(m) }
 func (*TsPurchaseRecordResp) ProtoMessage()               {}
-func (*TsPurchaseRecordResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{8} }
+func (*TsPurchaseRecordResp) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{8} }
 
 func (m *TsPurchaseRecordResp) GetPurchaseRecordList() []*TsPurchaseRecord {
 	if m != nil {
@@ -678,7 +678,7 @@ type TsPlayerLuckyRecordReq struct {
 func (m *TsPlayerLuckyRecordReq) Reset()                    { *m = TsPlayerLuckyRecordReq{} }
 func (m *TsPlayerLuckyRecordReq) String() string            { return proto.CompactTextString(m) }
 func (*TsPlayerLuckyRecordReq) ProtoMessage()               {}
-func (*TsPlayerLuckyRecordReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{9} }
+func (*TsPlayerLuckyRecordReq) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{9} }
 
 func (m *TsPlayerLuckyRecordReq) GetStart() int32 {
 	if m != nil && m.Start != nil {
@@ -710,7 +710,7 @@ type TsPlayerLuckyRecord struct {
 func (m *TsPlayerLuckyRecord) Reset()                    { *m = TsPlayerLuckyRecord{} }
 func (m *TsPlayerLuckyRecord) String() string            { return proto.CompactTextString(m) }
 func (*TsPlayerLuckyRecord) ProtoMessage()               {}
-func (*TsPlayerLuckyRecord) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{10} }
+func (*TsPlayerLuckyRecord) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{10} }
 
 func (m *TsPlayerLuckyRecord) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -777,7 +777,7 @@ type TsPlayerLuckyRecordResp struct {
 func (m *TsPlayerLuckyRecordResp) Reset()                    { *m = TsPlayerLuckyRecordResp{} }
 func (m *TsPlayerLuckyRecordResp) String() string            { return proto.CompactTextString(m) }
 func (*TsPlayerLuckyRecordResp) ProtoMessage()               {}
-func (*TsPlayerLuckyRecordResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{11} }
+func (*TsPlayerLuckyRecordResp) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{11} }
 
 func (m *TsPlayerLuckyRecordResp) GetPlayerLuckyRecord() []*TsPlayerLuckyRecord {
 	if m != nil {
@@ -796,7 +796,7 @@ type TsPlayerLuckyCodeReq struct {
 func (m *TsPlayerLuckyCodeReq) Reset()                    { *m = TsPlayerLuckyCodeReq{} }
 func (m *TsPlayerLuckyCodeReq) String() string            { return proto.CompactTextString(m) }
 func (*TsPlayerLuckyCodeReq) ProtoMessage()               {}
-func (*TsPlayerLuckyCodeReq) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{12} }
+func (*TsPlayerLuckyCodeReq) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{12} }
 
 func (m *TsPlayerLuckyCodeReq) GetPrizeId() int32 {
 	if m != nil && m.PrizeId != nil {
@@ -823,7 +823,7 @@ type TsPlayerLuckyCodeResp struct {
 func (m *TsPlayerLuckyCodeResp) Reset()                    { *m = TsPlayerLuckyCodeResp{} }
 func (m *TsPlayerLuckyCodeResp) String() string            { return proto.CompactTextString(m) }
 func (*TsPlayerLuckyCodeResp) ProtoMessage()               {}
-func (*TsPlayerLuckyCodeResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{13} }
+func (*TsPlayerLuckyCodeResp) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{13} }
 
 func (m *TsPlayerLuckyCodeResp) GetNumbers() []int32 {
 	if m != nil {
@@ -860,7 +860,7 @@ type TsLuckyPlayer struct {
 func (m *TsLuckyPlayer) Reset()                    { *m = TsLuckyPlayer{} }
 func (m *TsLuckyPlayer) String() string            { return proto.CompactTextString(m) }
 func (*TsLuckyPlayer) ProtoMessage()               {}
-func (*TsLuckyPlayer) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{14} }
+func (*TsLuckyPlayer) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{14} }
 
 func (m *TsLuckyPlayer) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -918,7 +918,7 @@ type TsLatelyLuckyPlayer struct {
 func (m *TsLatelyLuckyPlayer) Reset()                    { *m = TsLatelyLuckyPlayer{} }
 func (m *TsLatelyLuckyPlayer) String() string            { return proto.CompactTextString(m) }
 func (*TsLatelyLuckyPlayer) ProtoMessage()               {}
-func (*TsLatelyLuckyPlayer) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{15} }
+func (*TsLatelyLuckyPlayer) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{15} }
 
 func (m *TsLatelyLuckyPlayer) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -971,7 +971,7 @@ type TsLatelyLuckyPlayerResp struct {
 func (m *TsLatelyLuckyPlayerResp) Reset()                    { *m = TsLatelyLuckyPlayerResp{} }
 func (m *TsLatelyLuckyPlayerResp) String() string            { return proto.CompactTextString(m) }
 func (*TsLatelyLuckyPlayerResp) ProtoMessage()               {}
-func (*TsLatelyLuckyPlayerResp) Descriptor() ([]byte, []int) { return fileDescriptor16, []int{16} }
+func (*TsLatelyLuckyPlayerResp) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{16} }
 
 func (m *TsLatelyLuckyPlayerResp) GetLatelyLuckys() []*TsLatelyLuckyPlayer {
 	if m != nil {
@@ -1004,9 +1004,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.TsIssueStatus", TsIssueStatus_name, TsIssueStatus_value)
 }
 
-func init() { proto.RegisterFile("client_treasure.proto", fileDescriptor16) }
+func init() { proto.RegisterFile("client_treasure.proto", fileDescriptor18) }
 
-var fileDescriptor16 = []byte{
+var fileDescriptor18 = []byte{
 	// 1094 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xc4, 0x56, 0x5b, 0x6f, 0xe3, 0x44,
 	0x14, 0x96, 0x9d, 0x38, 0x71, 0x4e, 0x92, 0xd6, 0x99, 0x4d, 0x5b, 0x53, 0x6e, 0xc1, 0xaa, 0x56,

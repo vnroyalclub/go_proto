@@ -56,7 +56,7 @@ func (x *PayStateType) UnmarshalJSON(data []byte) error {
 	*x = PayStateType(value)
 	return nil
 }
-func (PayStateType) EnumDescriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
+func (PayStateType) EnumDescriptor() ([]byte, []int) { return fileDescriptor11, []int{0} }
 
 // 订单
 type VNOrder struct {
@@ -92,7 +92,7 @@ type VNOrder struct {
 func (m *VNOrder) Reset()                    { *m = VNOrder{} }
 func (m *VNOrder) String() string            { return proto.CompactTextString(m) }
 func (*VNOrder) ProtoMessage()               {}
-func (*VNOrder) Descriptor() ([]byte, []int) { return fileDescriptor9, []int{0} }
+func (*VNOrder) Descriptor() ([]byte, []int) { return fileDescriptor11, []int{0} }
 
 func (m *VNOrder) GetID() string {
 	if m != nil && m.ID != nil {
@@ -190,9 +190,9 @@ func init() {
 	proto.RegisterEnum("VK.Proto.PayStateType", PayStateType_name, PayStateType_value)
 }
 
-func init() { proto.RegisterFile("client_payment.proto", fileDescriptor9) }
+func init() { proto.RegisterFile("client_payment.proto", fileDescriptor11) }
 
-var fileDescriptor9 = []byte{
+var fileDescriptor11 = []byte{
 	// 324 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x90, 0xd1, 0x6a, 0xf2, 0x30,
 	0x14, 0xc7, 0x69, 0xf4, 0xfb, 0xd4, 0x33, 0xbb, 0xd5, 0x6c, 0x83, 0xb0, 0x8b, 0x51, 0x64, 0x17,

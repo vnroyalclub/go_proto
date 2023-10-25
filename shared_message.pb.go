@@ -20,7 +20,7 @@ type Empty struct {
 func (m *Empty) Reset()                    { *m = Empty{} }
 func (m *Empty) String() string            { return proto.CompactTextString(m) }
 func (*Empty) ProtoMessage()               {}
-func (*Empty) Descriptor() ([]byte, []int) { return fileDescriptor25, []int{0} }
+func (*Empty) Descriptor() ([]byte, []int) { return fileDescriptor27, []int{0} }
 
 // 消息协议
 type Message struct {
@@ -36,7 +36,7 @@ type Message struct {
 func (m *Message) Reset()                    { *m = Message{} }
 func (m *Message) String() string            { return proto.CompactTextString(m) }
 func (*Message) ProtoMessage()               {}
-func (*Message) Descriptor() ([]byte, []int) { return fileDescriptor25, []int{1} }
+func (*Message) Descriptor() ([]byte, []int) { return fileDescriptor27, []int{1} }
 
 func (m *Message) GetPlayerId() int64 {
 	if m != nil && m.PlayerId != nil {
@@ -69,7 +69,7 @@ type HttpResult struct {
 func (m *HttpResult) Reset()                    { *m = HttpResult{} }
 func (m *HttpResult) String() string            { return proto.CompactTextString(m) }
 func (*HttpResult) ProtoMessage()               {}
-func (*HttpResult) Descriptor() ([]byte, []int) { return fileDescriptor25, []int{2} }
+func (*HttpResult) Descriptor() ([]byte, []int) { return fileDescriptor27, []int{2} }
 
 func (m *HttpResult) GetEn() int32 {
 	if m != nil && m.En != nil {
@@ -103,7 +103,7 @@ type RpcMessage struct {
 func (m *RpcMessage) Reset()                    { *m = RpcMessage{} }
 func (m *RpcMessage) String() string            { return proto.CompactTextString(m) }
 func (*RpcMessage) ProtoMessage()               {}
-func (*RpcMessage) Descriptor() ([]byte, []int) { return fileDescriptor25, []int{3} }
+func (*RpcMessage) Descriptor() ([]byte, []int) { return fileDescriptor27, []int{3} }
 
 func (m *RpcMessage) GetId() string {
 	if m != nil && m.Id != nil {
@@ -153,7 +153,7 @@ type RpcResp struct {
 func (m *RpcResp) Reset()                    { *m = RpcResp{} }
 func (m *RpcResp) String() string            { return proto.CompactTextString(m) }
 func (*RpcResp) ProtoMessage()               {}
-func (*RpcResp) Descriptor() ([]byte, []int) { return fileDescriptor25, []int{4} }
+func (*RpcResp) Descriptor() ([]byte, []int) { return fileDescriptor27, []int{4} }
 
 func (m *RpcResp) GetId() string {
 	if m != nil && m.Id != nil {
@@ -184,9 +184,9 @@ func init() {
 	proto.RegisterType((*RpcResp)(nil), "VK.Proto.RpcResp")
 }
 
-func init() { proto.RegisterFile("shared_message.proto", fileDescriptor25) }
+func init() { proto.RegisterFile("shared_message.proto", fileDescriptor27) }
 
-var fileDescriptor25 = []byte{
+var fileDescriptor27 = []byte{
 	// 223 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0x64, 0x8f, 0xbd, 0x6a, 0xc3, 0x30,
 	0x14, 0x85, 0xd1, 0x55, 0x8c, 0x93, 0x4b, 0x09, 0x45, 0x74, 0x10, 0x9d, 0x8c, 0x27, 0x4d, 0xa1,
